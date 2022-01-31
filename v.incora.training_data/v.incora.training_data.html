@@ -1,0 +1,43 @@
+<h2>DESCRIPTION</h2>
+
+<em>v.incora.training_data</em> creates a vector map containing training points from a set of rules.
+Output classes (incora) are:
+<ul>
+<li>10 (forest)	</li>
+<li>20 (low veg)	</li>
+<li>30 (water)	</li>
+<li>40 (builtup)	</li>
+<li>50 (bare soil)	</li>
+<li>60 (agriculture)</li>
+</ul>
+<h2>EXAMPLE</h2>
+
+<div class="code"><pre>
+v.incora.training_data imperviousness=HRL_Imperviousness_null \
+landcover=S2GLC_Europe_2017_v1.2 ndvi_max=maja_2019_NDVI_maximum_Mar_May_Jul_Sep \
+ndvi_min=maja_2019_NDVI_minimum_Mar_May_Jul_Sep \
+ndvi_range=maja_2019_NDVI_range_Mar_May_Jul_Sep \
+ndwi=July19_NDWI ndbi=July19_NDBI asm=July19_asm_ASM \
+buildings=NRW_OSM_buildings_rast_10m roads=NRW_OSM_roads_rast_10m \
+npoints=10000 output=incora_training_auto_2019
+</pre></div>
+
+<h2>SEE ALSO</h2>
+
+<em>
+<a href="r.sample.category">r.sample.category</a>
+<a href="r.buffer">r.buffer</a>
+<a href="r.mapcalc">r.mapcalc</a>
+<a href="r.mask">r.mask</a>
+<a href="r.quantile">r.quantile</a>
+</em>
+
+<h2>AUTHORS</h2>
+
+Guido Riembauer, mundialis, riembauer at mundialis.de
+Anika Weinmann, mundialis, bettge at mundialis.de
+
+<!--
+<p>
+<i>Last changed: $Date$</i>
+-->

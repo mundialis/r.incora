@@ -1,0 +1,28 @@
+<h2>DESCRIPTION</h2>
+
+<em>r.incora.postproc</em> uses post processing to deal with mixed pixels identified
+in v.incora.training_data. Mixed pixels (class 70) are removed from the map. The gaps
+are then filled using <a href="r.grow.distance">r.grow.distance</a>.
+
+<h2>EXAMPLE</h2>
+
+<div class="code"><pre>
+r.incora.postproc classification=classification_map output=classification_map_postproc
+</pre></div>
+
+<h2>SEE ALSO</h2>
+
+<em>
+<a href="v.incora.training_data">v.incora.training_data</a>
+<a href="r.grow.distance">r.grow.distance</a>
+</em>
+
+<h2>AUTHORS</h2>
+
+Guido Riembauer, mundialis, riembauer at mundialis.de
+
+
+<!--
+<p>
+<i>Last changed: $Date$</i>
+-->

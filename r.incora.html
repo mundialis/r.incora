@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>GRASS GIS manual: r.incora toolset</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="grassdocs.css" type="text/css">
+</head>
+<body bgcolor="white">
+<div id="container">
+
+<a href="https://grass.osgeo.org/grass-stable/manuals/index.html"><img src="grass_logo.png" alt="GRASS logo"></a>
+<hr class="header">
+
+<h2>NAME</h2>
+
+<em><b>r.incora</b></em> - Toolset for Incora landcover classification.
+
+
+<h2>KEYWORDS</h2>
+<a href="https://grass.osgeo.org/grass-stable/manuals/raster.html">raster</a>, <a href="https://grass.osgeo.org/grass-stable/manuals/topic_classification.html">classification</a>
+
+<!-- meta page description: Toolset for download and processing time series of Sentinel products -->
+<h2>DESCRIPTION</h2>
+
+The <em>r.incora</em> toolset consists of currently three modules.
+<p>
+
+<i>Processing modules:</i>
+<dl>
+  <dt><a href="v.incora.training_data.html">v.incora.training_data</a></dt>
+  <dd>creates a vector map containing training points from a set of rules
+    containing the output classes: forest, low vegetation, water, built-up,
+    bare soil and agriculture.</dd>
+  <dt><a href="r.incora.postproc.html">r.incora.postproc</a></dt>
+  <dd> uses post processing to deal with mixed pixels identified
+  in <a href="v.incora.training_data">v.incora.training_data</a>. Mixed pixels
+  (class 70) are removed from the map. The gaps are then filled using
+  <a href="https://grass.osgeo.org/grass80/manuals/r.grow.distance.html">r.grow.distance</a>.</dd>
+  <dt><a href="r.incora.change.html">r.incora.change</a></dt>
+  <dd>runs a change detection based on two input maps. The
+  nomenclature is optimized for the incora project.</dd>
+</dl>
+
+<h2>REQUIREMENTS</h2>
+
+The following GRASS GIS Addons are required:
+
+<ul>
+  <li><a href="https://grass.osgeo.org/grass80/manuals/addons/r.sample.category.html">r.sample.category</a></li>
+  <li><a href="https://github.com/mundialis/r.change.stats.html">r.change.stats</a></li>
+  <li><a href="https://grass.osgeo.org/grass80/manuals/addons/r.change.info.html">r.change.info</a></li>
+</ul>
+
+<h2>AUTHORS</h2>
+
+Anika Weinmann and Guido Riembauer, <a href="https://www.mundialis.de/">mundialis</a>
+
+
+<!--
+<p>
+<i>Last changed: $Date$</i>
+-->
