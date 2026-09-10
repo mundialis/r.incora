@@ -1,5 +1,4 @@
 name: CodeQL Code Scan
-permissions: {}
 on:
   push:
     branches: [ "main" ]
@@ -9,4 +8,5 @@ on:
 
 jobs:
   codeql:
+    permissions: {}
     uses: mundialis/github-workflows/.github/workflows/codeql.yml@main
