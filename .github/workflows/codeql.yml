@@ -10,4 +10,5 @@ permissions: {}
 
 jobs:
   codeql:
+    permissions: {}
     uses: mundialis/github-workflows/.github/workflows/codeql.yml@main
