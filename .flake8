@@ -6,6 +6,6 @@
 exclude = .git
 max-line-length = 88
 per-file-ignores =
-    ./v.incora.training_data/v.incora.training_data.py: F821, E501
-    ./r.incora.postproc/r.incora.postproc.py: F821
-    ./r.incora.change/r.incora.change.py: F821
+    ./v.incora.training_data/v.incora.training_data.py: F821, E501, F824
+    ./r.incora.postproc/r.incora.postproc.py: F821, F824
+    ./r.incora.change/r.incora.change.py: F821, F824
