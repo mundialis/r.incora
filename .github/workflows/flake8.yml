@@ -4,9 +4,10 @@ on:
   - push
   - pull_request
 
+permissions: {}
+
 jobs:
   flake8:
-    permissions: {}
     runs-on: ubuntu-22.04
 
     steps:
