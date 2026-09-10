@@ -3,6 +3,8 @@ on:
   release:
     types: [published]
 
+permissions: {}
+
 jobs:
   generate-third-party-licenses:    
     uses: mundialis/github-workflows/.github/workflows/third-party-licenses.yml@main
