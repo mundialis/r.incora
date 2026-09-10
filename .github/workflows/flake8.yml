@@ -1,5 +1,5 @@
 name: Python Flake8 Code Quality
-
+permissions: {}
 on:
   - push
   - pull_request

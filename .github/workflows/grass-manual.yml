@@ -1,5 +1,5 @@
 name: GRASS GIS addon manual
-
+permissions: {}
 on:
   push:
     branches: [ main ]
