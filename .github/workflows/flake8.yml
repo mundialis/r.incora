@@ -1,11 +1,12 @@
 name: Python Flake8 Code Quality
-permissions: {}
+
 on:
   - push
   - pull_request
 
 jobs:
   flake8:
+    permissions: {}
     runs-on: ubuntu-22.04
 
     steps:
