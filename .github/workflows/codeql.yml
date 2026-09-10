@@ -6,6 +6,8 @@ on:
     # Check every Monday at 04:36
     - cron: "36 04 * * 1"
 
+permissions: {}
+
 jobs:
   codeql:
     permissions: {}
